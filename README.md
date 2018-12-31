@@ -1,2 +1,2 @@
-# react-emotion-starter
-Project starter with React 16.7, Emotion 10, &amp; Webpack 4
+# Lymphatic Therapy For Wellness
+Website for lyphatic therapy business, built with React & Emotion

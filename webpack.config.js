@@ -91,7 +91,7 @@ module.exports = {
         use: [{
           loader: "file-loader",
           options: {
-            name: "/[path][name].[ext]"
+            name: "[path][name][hash].[ext]"
           }
         }]
       }
@@ -104,7 +104,7 @@ module.exports = {
         template: path.resolve(__dirname, "src/index.html"),
         cdnModule: "deps",
         filename: "index.html",
-        title: "React Starter",
+        title: "Lymphatic Therapy For Wellness",
         inject: "body"
       }),
       new WebpackCdnPlugin({
