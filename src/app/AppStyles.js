@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 // theme settings used with Emotion
 
 export const theme = {
-  primary: '#333366',
+  primary: '#336633',
   primaryText: 'rgba(0,0,0,.87)',
   contrastText: '#FFFFFF',
   logoBlue: '#43C7ED',

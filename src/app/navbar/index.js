@@ -21,7 +21,7 @@ const CustomNavbar = styled(Row)`
                     ${props => rgba(props.theme.primary,.2)},
                     ${props => rgba(props.theme.primary,.4)} 30%,
                     ${props => rgba(props.theme.primary,.6)} 90%); */}
-  box-shadow: 0 2px 4px ${props => rgba('#555555', (props.position === 1 ? 1 : 0))};
+  box-shadow: 0 2px 4px ${props => rgba('#335533', (props.position === 1 ? 1 : 0))};
   height: 100px !important;
   transition: all 0.2s linear;
 `;
@@ -55,7 +55,7 @@ const NavTitle = styled.h1`
   font-family: ${props => props.theme.titleFont};
   font-size: 1.8em;
   color: ${props => props.theme.contrastText};
-  width: 8em;
+  width: 240px;
   word-wrap: break-word;
 `;
 
@@ -86,10 +86,10 @@ class Navbar extends React.Component {
             <Logo src={logo} alt="logo"/>
             <Column>
               <NavTitle >
-                <em>Manual Therapy For Wellness</em>
+                <em>Lymph Dynamics</em>
               </NavTitle>
               <NavSubtitle>
-              Treating Muscle, Fascia, Lymph
+              Lymphatic Drainage Therapy
               </NavSubtitle>
             </Column>
           </BrandGroup>

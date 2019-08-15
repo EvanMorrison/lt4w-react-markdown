@@ -122,7 +122,7 @@ module.exports = {
         template: path.resolve(__dirname, "src/index.html"),
         cdnModule: "deps",
         filename: "index.html",
-        title: "Massage, Manual Lymphatic Drainage, Myofascial Release | Lymphatic Massage | Manual Therapy for Wellness | MT4W",
+        title: "Lymphatic Drainage Therapy | Lymph Dynamics",
         inject: "body"
       }),
       new WebpackCdnPlugin({

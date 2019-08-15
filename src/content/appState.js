@@ -3,7 +3,7 @@ export default {
   homePage: {
     heroPanels: [
       {
-        title: 'Massage',
+        title: 'Lymphedema',
         routeName: 'massage',
         image: require('../assets/images/massage-1929064_250x167.jpg'),
         subtitle: 'Muscles',
@@ -17,7 +17,7 @@ export default {
         text: 'Even mild swelling from lymphedema can cause discomfort, anxiety, and self-consciousness. Fortunately, it can be treated and the swelling reduced, restoring your natural symmetry and aiding your body in ridding itself of unneeded waste and toxins.'
       },
       {
-        title: 'Myofascial Release',
+        title: 'Lymphatic Release',
         routeName: 'myofascial',
         image: require('../assets/images/stretch-therapy-250x167.jpeg'),
         subtitle: 'Connective Tissue',

@@ -17,8 +17,8 @@ const LocationWrapper = styled(Row)`
   background-image:
     linear-gradient(
       to bottom,
-      ${props => rgba(props.theme.blueLt, 0.7)} 67%,
-      ${props => rgba(props.theme.blueLt, 0.5)}
+      ${props => rgba(props.theme.primary, 0.7)} 67%,
+      ${props => rgba(props.theme.primary, 0.5)}
     ),
     url(${bgimage});
   background-size: cover;

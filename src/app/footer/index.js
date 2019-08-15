@@ -33,7 +33,7 @@ const Footer = () => (
       <Column>
         <Row>
           <span>&copy;{moment().format('YYYY')}</span>
-          <span>Lymphatic Dynamics, LLC</span>
+          <span>Lymph Dynamics, LLC</span>
         </Row>
       </Column>
       <Column>

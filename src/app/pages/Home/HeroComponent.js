@@ -9,11 +9,13 @@ import {theme} from '../../AppStyles';
 
 const HeroSection = styled.div`
   position: relative;
+  top: -85px;
   display: flex;
   flex-direction: row;
   padding: 80px 0 180px;
   background: transparent;
   justify-content: center;
+  z-index: 1;
 
   :after {
     content: '';

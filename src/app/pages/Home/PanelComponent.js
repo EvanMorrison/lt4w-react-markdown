@@ -8,7 +8,7 @@ const Panel = styled.div`
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
-  background: ${props => rgba(props.theme.blueLt, 0.7)};
+  background: ${props => rgba(props.theme.primary, 0.7)};
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease-out;
 
