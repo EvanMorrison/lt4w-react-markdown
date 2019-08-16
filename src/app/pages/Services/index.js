@@ -1,6 +1,6 @@
-import MassageComponent from './MassageComponent';
-import MLDComponent from './MLDComponent';
-import MyofascialComponent from './MyofascialComponent';
+import ServiceOne from './ServiceOne';
+import ServiceTwo from './ServiceTwo';
+import ServiceThree from './ServiceThree';
 import React from 'react';
 import ServicesComponent from './ServicesComponent';
 import styled from '@emotion/styled';
@@ -34,15 +34,15 @@ class ServicesContainer extends React.Component {
       <Section topcolor="logoBlue">
         <nav>
           <StyledList>
-            <li><NavLink to="/services/massage">Massage | </NavLink></li>
-            <li><NavLink to="/services/lymphatic">Lymphatic Drainage | </NavLink></li>
-            <li><NavLink to="/services/myofascial">Myofascial Release</NavLink></li>
+            <li><NavLink to={`/services/${props[0].routeName}`}>{props[0].title} | </NavLink></li>
+            <li><NavLink to={`/services/${props[1].routeName}`}>{props[1].title} | </NavLink></li>
+            <li><NavLink to={`/services/${props[2].routeName}`}>{props[2].title}</NavLink></li>
           </StyledList>
         </nav>
         <Route exact path="/services" component={ServicesComponent} />
-        <Route path='/services/massage' render={() => <MassageComponent info={props[0]} />} />
-        <Route path='/services/lymphatic' render={() => <MLDComponent info={props[1]} />} />
-        <Route path='/services/myofascial' render={() => <MyofascialComponent info={props[2]} />} />
+        <Route path={`/services/${props[0].routeName}`} render={() => <ServiceOne info={props[0]} />} />
+        <Route path={`/services/${props[1].routeName}`} render={() => <ServiceTwo info={props[1]} />} />
+        <Route path={`/services/${props[2].routeName}`} render={() => <ServiceThree info={props[2]} />} />
       </Section>
     );
   }

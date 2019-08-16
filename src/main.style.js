@@ -2,7 +2,7 @@
 import { css } from '@emotion/core';
 import { rgba } from 'polished';
 
-export default css`
+export default theme => css`
   @import url('https://fonts.googleapis.com/css?family=Roboto:900,700,500,400,300,100');
   @import url('https://fonts.googleapis.com/css?family=Philosopher|Montserrat:100,300,600');
   @import url('https://fonts.googleapis.com/css?family=Material+Icons');
@@ -29,7 +29,7 @@ export default css`
   }
 
   .active {
-    border-bottom: 1px solid ${rgba('steelblue', 0.7)};
+    border-bottom: 1px solid ${rgba(theme.primary, 0.7)};
   }
 
   @font-face {

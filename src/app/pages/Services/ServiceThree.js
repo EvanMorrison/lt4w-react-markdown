@@ -1,13 +1,13 @@
-import content from '../../../content/myofascial.md';
+import content from '../../../content/surgeries.md';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { PropTypes } from 'prop-types';
 import { SectionTitle, SectionBody, Paragraph } from '../../AppStyles';
 
-const MyofascialComponent = ({info}) => {
+const ServiceThree = ({info}) => {
   return (
     <React.Fragment>
-      <SectionTitle image={info.image}>Myofascial Release</SectionTitle>
+      <SectionTitle image={info.image}>{info.title}</SectionTitle>
       <SectionBody>
         <Paragraph>
           <ReactMarkdown source={content} escapeHtml={false}/>
@@ -17,8 +17,8 @@ const MyofascialComponent = ({info}) => {
   );
 };
 
-MyofascialComponent.propTypes = {
+ServiceThree.propTypes = {
   info: PropTypes.object
 };
 
-export default MyofascialComponent;
+export default ServiceThree;

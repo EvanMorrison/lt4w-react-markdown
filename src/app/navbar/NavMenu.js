@@ -28,7 +28,7 @@ const NavList = styled.ul`
       border-radius: 3px;
 
       &:hover, &.active {
-        background: ${props => rgba(props.theme.blueLt, 0.3)};
+        background: ${props => rgba(props.theme.primaryLt, 0.3)};
         transition: all 0.2s linear;
       }
     }

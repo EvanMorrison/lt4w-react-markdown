@@ -4,12 +4,12 @@ import styled from '@emotion/styled';
 
 export const theme = {
   primary: '#336633',
+  primaryLt: 'rgb(200, 250, 200)',
   primaryText: 'rgba(0,0,0,.87)',
   contrastText: '#FFFFFF',
   logoBlue: '#43C7ED',
   logoOrange: '#FF7D09',
   logoGreen: '#66C368',
-  blueLt: 'rgb(200, 200, 250)',
   titleFont: 'Philosopher',
   headingFont: 'Montserrat',
   bodyFont: 'Roboto',

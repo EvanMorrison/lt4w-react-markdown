@@ -4,24 +4,24 @@ export default {
     heroPanels: [
       {
         title: 'Lymphedema',
-        routeName: 'massage',
-        image: require('../assets/images/massage-1929064_250x167.jpg'),
-        subtitle: 'Muscles',
-        text: 'At MT4W we incorporate techniques from various modalities to deliver a medical massage experience customized to your specific needs and body type.'
-      },
-      {
-        title: 'Lymphatic Drainage',
-        routeName: 'lymphatic',
-        image: require('../assets/images/lymphatic_system_blue-250x180.jpg'),
-        subtitle: 'Detoxify',
+        routeName: 'lymphedema',
+        image: require('../assets/images/sundress-336590_640.jpg'),
+        subtitle: 'Lymphedema',
         text: 'Even mild swelling from lymphedema can cause discomfort, anxiety, and self-consciousness. Fortunately, it can be treated and the swelling reduced, restoring your natural symmetry and aiding your body in ridding itself of unneeded waste and toxins.'
       },
       {
-        title: 'Lymphatic Release',
-        routeName: 'myofascial',
-        image: require('../assets/images/stretch-therapy-250x167.jpeg'),
-        subtitle: 'Connective Tissue',
-        text: 'Myofascial Release is a hands-on technique that involves applying gentle sustained pressure into the connective tissue restrictions to eliminate pain and restore motion.'
+        title: 'Wellness',
+        routeName: 'wellness',
+        image: require('../assets/images/man-2609375_640.jpg'),
+        subtitle: 'Wellness & Detoxification',
+        text: ''
+      },
+      {
+        title: 'Pre & Post Surgical',
+        routeName: 'surgeries',
+        image: require('../assets/images/woman-3371263_640.jpg'),
+        subtitle: 'Breast Explant / Lyposuction / Other Surgeries',
+        text: ''
       }
     ]
   }

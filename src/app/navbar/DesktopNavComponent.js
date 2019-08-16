@@ -9,10 +9,6 @@ const DesktopNavWrapper = styled(Row)`
   justify-content: flex-end;
   align-items: center;
 
-  /* * {
-    color: ${props => props.position === 1 ? props.theme.contrastText : props.theme.primary};
-  } */
-
   @media (max-width: 1023px) {
     display: none;
   }

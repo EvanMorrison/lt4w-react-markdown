@@ -11,20 +11,20 @@ export default [
     icon: 'accessibility',
     children: [
       {
-        label: 'Massage',
-        path: '/services/massage',
+        label: 'Lymphedema',
+        path: '/services/lymphedema',
         icon: 'keyboard_arrow_right',
         children: null,
       },
       {
-        label: 'Lymphatic Drainage',
-        path: '/services/lymphatic',
+        label: 'Wellness',
+        path: '/services/wellness',
         icon: 'keyboard_arrow_right',
         children: null,
       },
       {
-        label: 'Myofascial Release',
-        path: '/services/myofascial',
+        label: 'Surgeries',
+        path: '/services/surgeries',
         icon: 'keyboard_arrow_right',
         children: null,
       },
