@@ -57,31 +57,59 @@ const subheadBlock = css`
   position: absolute;
   width: 800px;
   height: 100px;
-  background-color: #111111;
+  background-color: rgba(0, 0, 0, 0.6);
   transition: all 1.3s ease-in-out;
-  border-radius: 2px;
+  border-radius: 30% 5px 30% 5px / 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
 class HomeComponent extends React.Component {
+  state = {
+    enteringOne: false,
+    enteringTwo: false,
+    enteringThree: false
+  }
+
+  componentDidMount = () => {
+    setTimeout(() => {
+      this.setState({enteringOne: true});
+    });
+    setTimeout(() => {
+      this.setState({enteringTwo: true});
+    }, 750);
+    setTimeout(() => {
+      this.setState({enteringThree: true});
+    }, 1200);
+  }
+
   render() {
+    let one = this.state.enteringOne ? "25%" : "-800px";
+    let left = this.state.enteringTwo ? 0 : "-800px";
+    let right = this.state.enteringThree ? 0 : "-800px";
+    const h2Style = css`text-align: center; font-weight: 300; color: #FFFFFF;`
     return (
       <React.Fragment>
         <Mask/>
         <HeroSection>
           <div css={[subheadBlock, css`
-            top: 20vh;
-            left: 0;
+            top: 15vh;
+            right: ${one};
           `]}>
-            <h2 css={css`text-align: center; font-weight: 300; color: #FFFFFF;`}>Lymphatic Drainage for Health & Wellness</h2>
+            <h2 css={h2Style}>The Lymphatic system maintains<br/> the dynamic balance of fluid in your body</h2>
+          </div>
+          <div css={[subheadBlock, css`
+            top: 45vh;
+            left: ${left};
+          `]}>
+            <h2 css={h2Style}>Lymphatic fluid carries immune<br/> cells into, and by-products out of, your cells</h2>
           </div>
           <div css={[subheadBlock, css`
             top: 60vh;
-            right: 0;
+            right: ${right};
           `]}>
-            <h2 css={css`text-align: center; font-weight: 300; color: #FFFFFF;`}>Lymphatic Drainage & Complete Decongestive Therapy for Lymphedema</h2>
+            <h2 css={h2Style}>Manual Lymphatic Drainage is a hands-on therapy<br/> for stimulation and support of these vital processes</h2>
           </div>
         </HeroSection>
       </React.Fragment>
