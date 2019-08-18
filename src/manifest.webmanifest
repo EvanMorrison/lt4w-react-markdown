@@ -1,0 +1,13 @@
+{
+  "name": "Lymph Dynamics",
+  "short_name": "LT4W",
+  "start_url": "https://www.lt4w.com",
+  "description": "Providing lymphatic drainage therapy",
+  "icons": [
+    {
+      "src": "assets/logo_sm.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}

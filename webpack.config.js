@@ -12,6 +12,8 @@ const isPerformance = process.env.NODE_ENV === "performance";
 module.exports = {
   mode: isProduction ? "production" : "development",
 
+  context: path.resolve(__dirname, "src"),
+
   devServer: (() => {
     if(isProduction) return {};
     return {
@@ -25,7 +27,7 @@ module.exports = {
   devtool: isProduction ? "hidden-source-map" : "cheap-eval-source-map",
 
   entry: {
-    app: "./src/index.js"
+    app: "./index.js"
   },
 
   output: {
@@ -58,13 +60,14 @@ module.exports = {
                   "@emotion/babel-preset-css-prop",
                   {
                     "autoLabel": true,
-                    "labelFormat": "[local]"
+                    "labelFormat": "[local]",
+                    "sourceMap": true,
                   }
                 ]
               ],
               plugins: [
-                "emotion",
                 "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-syntax-dynamic-import",
                 "react-hot-loader/babel"
               ]
             }
@@ -86,14 +89,28 @@ module.exports = {
           emitWarning: true
         }
       }, {
-        test: /\.(svg|png|gif|jpe?g)$/,
+        test: /\.(ico|svg|png|gif|jpe?g)$/,
         exclude: /node_modules/,
         use: [{
           loader: "file-loader",
           options: {
-            name: "[name][hash].[ext]",
-            outputPath: "images"
+            name: "[path][name].[ext]"
           }
+        }]
+      }, {
+        test: /\.md$/,
+        use: [{
+          loader: "raw-loader"
+        }]
+      }, {
+        test: /manifest\.(webmanifest|json)$/,
+        use: [{
+          loader: "file-loader",
+          options: {
+            name: "[path][name].[ext]"
+          }
+        }, {
+          loader: "app-manifest-loader"
         }]
       }
     ]
@@ -105,7 +122,7 @@ module.exports = {
         template: path.resolve(__dirname, "src/index.html"),
         cdnModule: "deps",
         filename: "index.html",
-        title: "Lymphatic Therapy For Wellness",
+        title: "Lymphatic Drainage Therapy | Lymph Dynamics",
         inject: "body"
       }),
       new WebpackCdnPlugin({
@@ -115,6 +132,8 @@ module.exports = {
             { name: "react-dom", var: "ReactDOM", path: `umd/react-dom.${isProduction ? "production.min" : "development"}.js` },
             { name: "react-router", var: "ReactRouter", path: "umd/react-router.min.js" },
             { name: "react-router-dom", var: "ReactRouterDOM", path: "umd/react-router-dom.min.js" },
+            { name: "@material/button", var: "Button", cssOnly: true, style: "dist/mdc.button.css"},
+            { name: "@material/textfield", var: "TextField", cssOnly: true, style: "dist/mdc.textfield.css"}
           ]
         }
       })
@@ -147,6 +166,9 @@ module.exports = {
     minimize: isProduction,
     minimizer: [
       new TerserPlugin()
-    ]
+    ],
+    splitChunks: {
+      chunks: "all"
+    }
   }
 };
