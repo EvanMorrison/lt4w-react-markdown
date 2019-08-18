@@ -85,10 +85,10 @@ class HomeComponent extends React.Component {
   }
 
   render() {
-    let one = this.state.enteringOne ? "25%" : "-800px";
-    let left = this.state.enteringTwo ? 0 : "-800px";
-    let right = this.state.enteringThree ? 0 : "-800px";
-    const h2Style = css`text-align: center; font-weight: 300; color: #FFFFFF;`
+    let one = this.state.enteringOne ? '25%' : '-800px';
+    let left = this.state.enteringTwo ? 0 : '-800px';
+    let right = this.state.enteringThree ? 0 : '-800px';
+    const h2Style = css`text-align: center; font-weight: 300; color: #FFFFFF;`;
     return (
       <React.Fragment>
         <Mask/>
