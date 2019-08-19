@@ -13,7 +13,6 @@ import '../assets/fonts/mt4w-icons.svg';
 
 const AppointmentComponent = React.lazy(() => import(/* webpackChunkName: "appointments" */'./pages/Appointments'));
 const AboutComponent = React.lazy(() => import(/* webpackChunkName: "about" */'./pages/About'));
-// const HomeContainer = React.lazy(() => import(/* webpackChunkName: "home" */'./pages/Home'));
 const ServicesContainer = React.lazy(() => import(/* webpackChunkName: "services" */'./pages/Services'));
 
 const Loading = () => (

@@ -1,7 +1,7 @@
 {
   "name": "lt4w",
   "version": "1.0.0",
-  "description": "a website for Lymph Dynamics",
+  "description": "a website for Dynamic Lymphatics",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production webpack-cli --config ./webpack.config.js",
