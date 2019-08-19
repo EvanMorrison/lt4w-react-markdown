@@ -122,7 +122,7 @@ module.exports = {
         template: path.resolve(__dirname, "src/index.html"),
         cdnModule: "deps",
         filename: "index.html",
-        title: "Lymphatic Drainage Therapy | Lymph Dynamics",
+        title: "Lymphatic Drainage Therapy | Dynamic Lymphatics",
         inject: "body"
       }),
       new WebpackCdnPlugin({

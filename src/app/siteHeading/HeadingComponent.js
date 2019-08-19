@@ -66,7 +66,7 @@ class HeadingComponent extends React.Component {
       <StyledWrapper>
         <Column>
           <Brand position={this.props.position}>
-            <BrandName><em>Lymph Dynamics</em></BrandName>
+            <BrandName><em>Dynamic Lymphatics</em></BrandName>
             <Tagline>Lymphatic Drainage Therapy</Tagline>
           </Brand>
         </Column>

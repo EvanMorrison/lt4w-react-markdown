@@ -42,6 +42,7 @@ export const Column = styled.div`
 export const Section = styled(Column)`
   width: 100%;
   max-width: 1440px;
+  overflow-x: hidden;
   min-height: calc(100vh - 270px);
   margin: 0 auto;
   padding: 50px 10%;

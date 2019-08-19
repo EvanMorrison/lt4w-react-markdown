@@ -1,5 +1,2 @@
-# Redirect domain aliases to primary domain
-https://www.lt4w.com/* https://www.lymphatictherapy4wellness.com/:splat 301!
-
 # Optional: Redirect default Netlify subdomain to primary domain
-https://upbeat-benz-03e471.netlify.com/* https://www.lymphatictherapy4wellness.com/:splat 301!
+https://upbeat-benz-03e471.netlify.com/* https://www.dynamiclymphatics.com/:splat 301!

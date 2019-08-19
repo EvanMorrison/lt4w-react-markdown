@@ -86,7 +86,7 @@ class Navbar extends React.Component {
             <Logo src={logo} alt="logo"/>
             <Column>
               <NavTitle >
-                <em>Lymph Dynamics</em>
+                <em>Dynamic Lymphatics</em>
               </NavTitle>
               <NavSubtitle>
               Lymphatic Drainage Therapy
