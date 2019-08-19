@@ -1,6 +1,6 @@
 export default `<div class="place-card place-card-large">
   <div class="place-desc-large">
-    <div class="place-name">Lymph Dynamics</div>
+    <div class="place-name">Dynamic Lymphatics</div>
     <div class="address">9815 E Bell Road, Suite 110, Scottsdale, AZ 85260</div>
   </div>
   <div class="navigate">
