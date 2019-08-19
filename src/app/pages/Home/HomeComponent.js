@@ -5,7 +5,7 @@ import { css } from '@emotion/core';
 import { PropTypes } from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
-const HeroSection = styled.div`
+const HomeSection = styled.div`
   height: calc(100vh - 50px);
   position: relative;
   display: flex;
@@ -56,6 +56,7 @@ const Mask = styled.div`
 const subheadBlock = css`
   position: absolute;
   width: 800px;
+  max-width: 100%;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 1.3s ease-in-out;
@@ -88,19 +89,32 @@ class HomeComponent extends React.Component {
     let one = this.state.enteringOne ? '25%' : '-800px';
     let left = this.state.enteringTwo ? 0 : '-800px';
     let right = this.state.enteringThree ? 0 : '-800px';
-    const h2Style = css`text-align: center; font-weight: 300; color: #FFFFFF;`;
+    const h2Style = css`
+      text-align: center;
+      font-weight: 300;
+      color: #FFFFFF;
+
+      @media screen and (max-width: 500px) {
+        font-size: 12px;
+        font-weight: 100;
+      }
+    `;
     return (
       <React.Fragment>
         <Mask/>
-        <HeroSection>
+        <HomeSection>
           <div css={[subheadBlock, css`
             top: 15vh;
             right: ${one};
+
+            @media screen and (max-width: 900px) {
+              right: ${one === '25%' ? 0 : '-800px'};
+            }
           `]}>
             <h2 css={h2Style}>The Lymphatic system maintains<br/> the dynamic balance of fluid in your body</h2>
           </div>
           <div css={[subheadBlock, css`
-            top: 45vh;
+            top: 35vh;
             left: ${left};
           `]}>
             <h2 css={h2Style}>Lymphatic fluid carries immune<br/> cells into, and by-products out of, your cells</h2>
@@ -111,7 +125,7 @@ class HomeComponent extends React.Component {
           `]}>
             <h2 css={h2Style}>Manual Lymphatic Drainage is a hands-on therapy<br/> for stimulation and support of these vital processes</h2>
           </div>
-        </HeroSection>
+        </HomeSection>
       </React.Fragment>
     );
   }
