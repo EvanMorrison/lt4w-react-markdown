@@ -27,7 +27,7 @@ class AppointmentComponent extends React.Component {
     event.preventDefault();
     this.setState({sending: true});
 
-    const url = 'https://script.google.com/a/manualtherapy4wellness.com/macros/s/AKfycbwqKappQ9bAgLSwrvHaFUoaG3PeuBKx0ohCsSn9/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbw-xfaz8aNsqMiI5UzgoOG_4tTJjkTlj6XjmjAEJ7tIjVzf0S8/exec';
 
     // using Google Apps Script sendEmail to send the form data as an email.
     // trying $resource did not work, resulting in a cross-origin error. So this is using
