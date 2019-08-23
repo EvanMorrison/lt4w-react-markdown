@@ -51,7 +51,7 @@ class MobileNavComponent extends Component {
     return (
       <Navbutton position={this.props.position}>
         <i className="icon-menu"
-          css={{color: 'inherit', position: 'absolute', left: 0}}
+          css={{color: 'inherit'}}
           onClick={this.openDrawer}>
           menu
         </i>

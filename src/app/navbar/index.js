@@ -61,7 +61,7 @@ const NavTitle = styled.h1`
 
 const NavSubtitle = styled.h4`
   margin-top: 5px;
-  font-family: ${props => props.theme.headingFont};
+  font-family: ${props => props.theme.bodyFont};
   color: ${props => props.theme.contrastText};
   min-width: 17em;
 `;

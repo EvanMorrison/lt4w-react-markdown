@@ -15,14 +15,9 @@ const logo = require('../../assets/logo_sm.png');
 
 const Brand = styled.div`
   position: fixed;
-  transform-origin: -100px top;
-  transform:
-    scale(${props => 1 - props.position > 0.75 ? 1 - props.position : 0.75})
-    translateY(${props => -23 * (props.position)}px)
-    translateX(${props => -60 * (props.position)}px);
   opacity: ${props => (props.position === 1) ? 0 : 1};
   min-width: 7em;
-  margin-left: 150px;
+  margin-left: 110px;
   z-index: -1;
   transition: all 0.2s ease-out;
 
@@ -39,9 +34,20 @@ const Brand = styled.div`
     margin: auto 0;
   } */
 
-  @media (max-width: 426px) {
-    margin-left: 80px;
-    font-size: 70%;
+  @media (min-width: 550px) {
+    transform-origin: -100px top;
+    transform:
+      scale(${props => 1 - props.position > 0.75 ? 1 - props.position : 0.75})
+      translateY(${props => -23 * (props.position)}px)
+      translateX(${props => -30 * (props.position)}px);
+  }
+
+  @media (max-width: 549px) {
+    transform:
+      scale(${props => 1 - props.position > 0.85 ? 1 - props.position : 0.85})
+      translateY(${props => -40 * (props.position)}px);
+    margin-left: 10%;
+    font-size: 80%;
 
     &:after {
       width: 65px;
