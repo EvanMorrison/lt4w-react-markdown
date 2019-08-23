@@ -10,10 +10,10 @@ export const theme = {
   logoBlue: '#43C7ED',
   logoOrange: '#FF7D09',
   logoGreen: '#66C368',
-  titleFont: 'Philosopher',
+  titleFont: 'Bilbo Swash Caps',
   headingFont: 'Montserrat',
-  bodyFont: 'Roboto',
-  menuFont: 'Roboto'
+  bodyFont: 'Arimo',
+  menuFont: 'Arimo'
 };
 
 export const Row = styled.div`
@@ -55,7 +55,7 @@ export const SectionTitle = styled.h1`
   position: relative;
   font-family: ${props => props.theme.titleFont};
   font-style: italic;
-  font-size: 2.75em;
+  font-size: 3.5em;
   margin: 1em 0 1em;
   transition: all 0.2s ease-out;
 

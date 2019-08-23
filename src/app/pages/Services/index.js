@@ -16,9 +16,9 @@ const StyledList = styled.ul`
     display: inline-block;
     margin-right: 5px;
     font-size: 18px;
-    &:first-child { color: ${props => props.theme.logoGreen}; }
-    &:nth-child(2) { color: ${props => props.theme.logoOrange}; }
-    &:last-child { color: ${props => props.theme.logoBlue}; }
+    &:first-of-type { color: ${props => props.theme.logoGreen}; }
+    &:nth-of-type(2) { color: ${props => props.theme.logoGreen}; }
+    &:last-of-type { color: ${props => props.theme.logoGreen}; }
     &.active { text-decoration: underline; }
 
     @media (max-width: 540px) {
@@ -31,7 +31,7 @@ class ServicesContainer extends React.Component {
   render() {
     const props = appState.homePage.heroPanels;
     return (
-      <Section topcolor="logoBlue">
+      <Section topcolor="logoGreen">
         <nav>
           <StyledList>
             <li><NavLink to={`/services/${props[0].routeName}`}>{props[0].title} | </NavLink></li>

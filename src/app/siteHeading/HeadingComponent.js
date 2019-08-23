@@ -17,9 +17,8 @@ const Brand = styled.div`
   position: fixed;
   transform-origin: -100px top;
   transform:
-    scale(${props => (1 - props.position > 0.75) ? 1 - props.position : 0.75})
     translateY(${props => -23 * (props.position)}px)
-    translateX(${props => -10 * (props.position)}px);
+    translateX(${props => -60 * (props.position)}px);
   opacity: ${props => (props.position === 1) ? 0 : 1};
   min-width: 7em;
   margin-left: 150px;

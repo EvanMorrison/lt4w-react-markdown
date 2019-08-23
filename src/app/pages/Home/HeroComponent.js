@@ -3,6 +3,7 @@ import hero from '../../../assets/images/background-1998454_980.jpg';
 import PanelComponent from './PanelComponent';
 import React from 'react';
 import styled from '@emotion/styled';
+import { rgba } from 'polished';
 import { PropTypes } from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import {theme} from '../../AppStyles';
@@ -26,14 +27,20 @@ const HeroSection = styled.div`
     width: 100%;
     opacity: 0.3;
     z-index: -1;
-    background-image: url(${hero});
+    background-image:
+      linear-gradient(
+        to bottom,
+        ${props => rgba(props.theme.logoGreen, 0.5)} 67%,
+        ${props => rgba(props.theme.logoGreen, 0.5)}
+      ),
+      url(${hero});
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     border-radius: 100% 0 100% 0/ 100px 0 200px 0;
     border-top: 12px solid ${props => props.theme.logoGreen};
-    border-bottom: 12px solid ${props => props.theme.logoBlue};
+    border-bottom: 12px solid ${props => props.theme.logoGreen};
   }
 
   @media screen and (max-width: 1023px) {
@@ -55,7 +62,7 @@ class HeroComponent extends React.Component {
 
   render() {
     const panels = this.state.panels;
-    const colors = [theme.logoGreen, theme.logoOrange, theme.logoBlue];
+    const colors = [theme.logoGreen, theme.logoGreen, theme.logoGreen];
     return (
       <HeroSection>
         {panels.map((p, i) => {

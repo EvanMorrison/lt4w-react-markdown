@@ -7,21 +7,21 @@ export default {
         routeName: 'lymphedema',
         image: require('../assets/images/sundress-336590_640.jpg'),
         subtitle: 'Lymphedema',
-        text: 'Even mild swelling from lymphedema can cause discomfort, anxiety, and self-consciousness. Fortunately, it can be treated and the swelling reduced, restoring your natural symmetry.'
+        text: 'Our Manual Lymphatic Drainage is a gold-standard support for lymphedema (chronic interstitial swelling) management...[click to learn more]'
       },
       {
         title: 'Wellness',
         routeName: 'wellness',
         image: require('../assets/images/man-2609375_640.jpg'),
         subtitle: 'Wellness & Detoxification',
-        text: 'Our therapies are beneficial for maintaining wellness and aiding your body in ridding itself of unneeded waste and toxins.'
+        text: 'We understand our patients who are dealing with the challenges of ridding themselves of harmful toxins...[click to learn more]'
       },
       {
         title: 'Pre & Post Surgical',
         routeName: 'surgeries',
         image: require('../assets/images/woman-3371263_640.jpg'),
         subtitle: 'Breast Explant/Lyposuction Other Surgeries',
-        text: 'Manual lymphatic drainage is especially helpful pre and post-surgery to aid in recovery.'
+        text: 'Manual Lymphatic Drainage supports complete recovery from surgeries of any type...[click to learn more]'
       }
     ]
   }

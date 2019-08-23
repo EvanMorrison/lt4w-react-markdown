@@ -11,7 +11,7 @@ class App extends Component {
           body {
             padding: 0;
             margin: 0;
-            font-family: Roboto, "Helvetica Neue", sans-serif;
+            font-family: Arimo, "Helvetica Neue", sans-serif;
           }
         `}/>
         <Home/>

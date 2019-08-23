@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export default styled.div`
   .map-group * {
-    font-family: Roboto, sans-serif;
+    font-family: Arimo, sans-serif;
   }
 
   .map-group .place-card {
@@ -105,7 +105,7 @@ export default styled.div`
   }
 
   .map-group .bottom-actions a {
-    font-family: Roboto, sans-serif;
+    font-family: Arimo, sans-serif;
   }
 
   .map-group .bottom-actions a:visited {

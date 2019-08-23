@@ -53,7 +53,7 @@ const Logo = styled.img`
 
 const NavTitle = styled.h1`
   font-family: ${props => props.theme.titleFont};
-  font-size: 1.8em;
+  font-size: 2.5em;
   color: ${props => props.theme.contrastText};
   width: 240px;
   word-wrap: break-word;

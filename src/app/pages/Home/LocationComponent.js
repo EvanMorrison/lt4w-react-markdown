@@ -13,12 +13,12 @@ const LocationWrapper = styled(Row)`
 
   min-height: 600px;
   border-radius: 90% 0 0 0 / 150px 0 0 0;
-  border-top: 12px solid ${props => rgba(props.theme.logoOrange, 0.8)};
+  border-top: 12px solid ${props => rgba(props.theme.logoGreen, 0.8)};
   background-image:
     linear-gradient(
       to bottom,
-      ${props => rgba(props.theme.primary, 0.7)} 67%,
-      ${props => rgba(props.theme.primary, 0.5)}
+      ${props => rgba(props.theme.primary, 0.6)} 67%,
+      ${props => rgba(props.theme.primary, 0.2)}
     ),
     url(${bgimage});
   background-size: cover;

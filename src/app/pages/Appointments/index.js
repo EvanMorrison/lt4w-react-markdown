@@ -54,7 +54,7 @@ class AppointmentComponent extends React.Component {
 
   render() {
     return (
-      <Section topcolor="logoOrange">
+      <Section topcolor="logoGreen">
         <SectionTitle>Appointments</SectionTitle>
         <SectionBody>
           <Paragraph>
