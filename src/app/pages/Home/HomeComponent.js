@@ -120,7 +120,7 @@ class HomeComponent extends React.Component {
             <h2 css={h2Style}>Lymphatic fluid carries immune<br/> cells into, and by-products out of, your cells</h2>
           </div>
           <div css={[subheadBlock, css`
-            top: 60vh;
+            top: 50vh;
             right: ${right};
           `]}>
             <h2 css={h2Style}>Manual Lymphatic Drainage is a hands-on therapy<br/> for stimulation and support of these vital processes</h2>
