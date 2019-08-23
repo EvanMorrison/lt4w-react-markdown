@@ -28,7 +28,7 @@ const Panel = styled.div`
   @media screen and (min-width: 1100px) {
     flex: 0 0 30%;
     max-width: 400px;
-    height: 680px;
+    height: 550px;
   }
 `;
 
@@ -37,7 +37,7 @@ const PanelHeading = styled.h2`
   height: 84px;
   line-height: 84px;
   font-family: ${props => props.theme.titleFont};
-  font-size: 2.2em;
+  font-size: 3em;
   text-align: center;
   color: ${props => props.color};
   text-shadow: 1px 1px #222244;
@@ -87,7 +87,7 @@ const PanelComponent = ({props, color, onClick}) => (
     </PanelHeading>
     <PanelImg src={props.image} alt=""/>
     <PanelContent>
-      <PanelSubtitle >{props.subtitle}</PanelSubtitle>
+      {/* <PanelSubtitle >{props.subtitle}</PanelSubtitle> */}
       <PanelText>{props.text} </PanelText>
     </PanelContent>
   </Panel>

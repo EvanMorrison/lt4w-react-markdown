@@ -17,6 +17,7 @@ const Brand = styled.div`
   position: fixed;
   transform-origin: -100px top;
   transform:
+    scale(${props => 1 - props.position > 0.75 ? 1 - props.position : 0.75})
     translateY(${props => -23 * (props.position)}px)
     translateX(${props => -60 * (props.position)}px);
   opacity: ${props => (props.position === 1) ? 0 : 1};
@@ -25,7 +26,7 @@ const Brand = styled.div`
   z-index: -1;
   transition: all 0.2s ease-out;
 
-  &:after {
+  /* &:after {
     position: absolute;
     content: '';
     width: 100px;
@@ -36,7 +37,7 @@ const Brand = styled.div`
     bottom: 0;
     left: -115px;
     margin: auto 0;
-  }
+  } */
 
   @media (max-width: 426px) {
     margin-left: 80px;
@@ -51,11 +52,11 @@ const Brand = styled.div`
 
 const BrandName = styled.h1`
   font-family: ${props => props.theme.titleFont};
-  font-size: 2.5em;
+  font-size: 4em;
 `;
 
 const Tagline = styled.h3`
-  font-family: ${props => props.theme.headingFont};
+  font-family: ${props => props.theme.bodyFont};
   font-size: 1.1em;
 `;
 
