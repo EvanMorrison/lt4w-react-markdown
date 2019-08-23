@@ -64,13 +64,6 @@ const PanelContent = styled(Column)`
   margin-bottom: 20px;
 `;
 
-const PanelSubtitle = styled.h2`
-  font-family: ${props => props.theme.headingFont};
-  font-size: 1.5em;
-  opacity: 0.87;
-  margin-bottom: 15px;
-`;
-
 const PanelText = styled.p`
   font-family: ${props => props.theme.bodyFont};
   ${''/* text-align: justify; */}
@@ -87,7 +80,6 @@ const PanelComponent = ({props, color, onClick}) => (
     </PanelHeading>
     <PanelImg src={props.image} alt=""/>
     <PanelContent>
-      {/* <PanelSubtitle >{props.subtitle}</PanelSubtitle> */}
       <PanelText>{props.text} </PanelText>
     </PanelContent>
   </Panel>
