@@ -148,7 +148,7 @@ module.exports = {
     if (isProduction) {
       pluginsList.push(
         new CleanWebpackPlugin(["dist"], {
-          exclude: ["favicon.ico", "manifest.json"]
+          exclude: ["favicon.ico", "manifest.json", "_redirects"]
         }),
         new webpack.HashedModuleIdsPlugin()
       );
