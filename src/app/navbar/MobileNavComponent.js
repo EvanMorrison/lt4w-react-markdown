@@ -1,5 +1,4 @@
 import Drawer from './components/drawer';
-import logo from '../../assets/logo_sm.png';
 import NavMenu from './NavMenu';
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
@@ -30,7 +29,7 @@ const DrawerHeader = styled(Row)`
   background: ${props => rgba(props.theme.primary, 0.8)};
 `;
 
-const Logo = styled.img`
+const Logo = styled.div`
   width: 80px;
   height: 80px;
   margin: 20px;
@@ -58,7 +57,11 @@ class MobileNavComponent extends Component {
 
         <Drawer open={this.state.isDrawerOpen} closeDrawer={this.closeDrawer}>
           <DrawerHeader>
-            <Logo src={logo}/>
+            <Logo>
+              <h1 css={theme => ({fontFamily: theme.titleFont, color: theme.contrastText})}>
+                <em>Dynamic<br/>Lymphatics</em>
+              </h1>
+            </Logo>
           </DrawerHeader>
           <NavMenu position={0}
             isDrawerOpen={this.state.isDrawerOpen}

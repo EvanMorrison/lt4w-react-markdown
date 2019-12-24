@@ -1,5 +1,4 @@
 import DesktopNavComponent from './DesktopNavComponent';
-import logo from '../../assets/logo_sm.png';
 import MobileNavComponent from './MobileNavComponent';
 import React from 'react';
 import styled from '@emotion/styled';
@@ -12,6 +11,7 @@ const CustomNavbar = styled(Row)`
     padding: 0 24px;
   }
 
+  padding: 0 12px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -43,12 +43,6 @@ const BrandGroup = styled(Row)`
   position: relative;
   top: 0;
   opacity: ${props => props.position === 1 ? 1 : 0};
-`;
-
-const Logo = styled.img`
-  height: 80px;
-  width: 80px;
-  padding: 6px;
 `;
 
 const NavTitle = styled.h1`
@@ -83,7 +77,6 @@ class Navbar extends React.Component {
       <CustomNavbar position={this.props.position}>
         <NavbarContentContainer>
           <BrandGroup position={this.props.position}>
-            <Logo src={logo} alt="logo"/>
             <Column>
               <NavTitle >
                 <em>Dynamic Lymphatics</em>

@@ -11,8 +11,6 @@ const StyledWrapper = styled.div`
   margin: 0 auto;
 `;
 
-const logo = require('../../assets/logo_sm.png');
-
 const Brand = styled.div`
   position: fixed;
   opacity: ${props => (props.position === 1) ? 0 : 1};
@@ -20,19 +18,6 @@ const Brand = styled.div`
   margin-left: 110px;
   z-index: -1;
   transition: all 0.2s ease-out;
-
-  /* &:after {
-    position: absolute;
-    content: '';
-    width: 100px;
-    height: 100px;
-    z-index: 10;
-    background: no-repeat center/contain url(${logo});
-    top: 0;
-    bottom: 0;
-    left: -115px;
-    margin: auto 0;
-  } */
 
   @media (min-width: 550px) {
     transform-origin: -100px top;
@@ -46,7 +31,7 @@ const Brand = styled.div`
     transform:
       scale(${props => 1 - props.position > 0.85 ? 1 - props.position : 0.85})
       translateY(${props => -40 * (props.position)}px);
-    margin-left: 10%;
+    margin-left: 2%;
     font-size: 80%;
 
     &:after {
